@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Life - Discover Sri Lanka</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image01.jpg');
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800" x-data="{ mobileMenu: false }">
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="#" class="flex-shrink-0">
+                    <span class="text-2xl font-bold text-green-700">Living Life</span>
+                </a>
+                <div class="hidden md:block ml-10 space-x-4">
+                    <a href="#destinations" class="text-gray-600 hover:bg-green-100 hover:text-green-700 px-3 py-2 rounded-md">Destinations</a>
+                    <a href="#travel-guide" class="text-gray-600 hover:bg-green-100 hover:text-green-700 px-3 py-2 rounded-md">Travel Guide</a>
+                    <a href="#experiences" class="text-gray-600 hover:bg-green-100 hover:text-green-700 px-3 py-2 rounded-md">Experiences</a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <button class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-3         
+
+ <header class="relative h-screen flex items-center justify-center text-center hero-bg bg-cover bg-center">
+        <div class="z-10 text-white px-4">
+            <a href="#contact" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">
+             Plan Your Journey  
+            </a>
+        </div>
+                </button>
+            </div>
+            <div class="md:hidden">
+                <button @click="mobileMenu = !mobileMenu" class="text-gray-600 hover:text-green-700">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div x-show="mobileMenu" class="md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+                <a href="#destinations" class="text-gray-600 hover:bg-green-100 hover:text-green-700 block px-3 py-2 rounded-md">Destinations</a>
+                <a href="#travel-guide" class="text-gray-600 hover:bg-green-100 hover:text-green-700 block px-3 py-2 rounded-md">Travel Guide</a>
+                <a href="#experiences" class="text-gray-600 hover:bg-green-100 hover:text-green-700 block px-3 py-2 rounded-md">Experiences</a>
+                <button class="w-full bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition duration-300">
+                    Plan Your Journey
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-center hero-bg bg-cover bg-center">
+        <div class="z-10 text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Discover Yourself through Travel</h1>
+            <p class="text-xl mb-8">"The world can touch your heart when you discover about yourself"</p>
+            <a href="#destinations" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300">
+                Start Your Adventure
+            </a>
+        </div>
+    </header>
+
+    <section id="destinations" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Explore Sri Lanka</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                    <img src="image02.jpg" alt="Ella" class="rounded-t-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Nature Destinations</h3>
+                    <ul class="space-y-2">
+                        <li>Ella</li>
+                        <li>Horton Plains</li>
+                        <li>Sinharaja Rainforest</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                    <img src="image03.jpg" alt="Sigiriya" class="rounded-t-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Cultural Heritage</h3>
+                    <ul class="space-y-2">
+                        <li>Sigiriya</li>
+                        <li>Anuradhapura</li>
+                        <li>Polonnaruwa</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition duration-300">
+                    <img src="image04.jpg" alt="Kitulgala" class="rounded-t-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Adventure Spots</h3>
+                    <ul class="space-y-2">
+                        <li>Adam's Peak</li>
+                        <li>Kitulgala</li>
+                        <li>Knuckles Mountain Range</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="travel-guide" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Travel Guide</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Best Time to Visit</h3>
+                    <p>November to April for the southwest coast and May to September for the northeast coast.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Local Transport</h3>
+                    <p>Tuk-tuks are great for short distances, while trains offer scenic rides across the country.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Currency</h3>
+                    <p>Sri Lankan Rupee (LKR). Keep small bills for local markets and transport.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Cultural Etiquette</h3>
+                    <p>Respect local customs, especially when visiting temples. Wear modest clothing and remove footwear when entering sacred sites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Experiences in Sri Lanka</h2>
+            <p>Sri Lanka isn't just a destination—it's a treasure trove of experiences that awaken your senses and enrich your soul. Here's a list of must-try activities:</p>
+            <div class="grid md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Explore Ancient Heritage</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <img src="image05.jpg" alt="Sigiriya Rock Fortress" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Sigiriya Rock Fortress</h4>
+                            <p>Climb this iconic site for a mix of history, architecture, and breathtaking views.</p>
+                        </li>
+                        <li>
+                            <img src="image06.jpg" alt="Polonnaruwa Ancient City" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Polonnaruwa Ancient City</h4>
+                            <p>Walk among well-preserved ruins that tell tales of Sri Lanka's royal past.</p>
+                        </li>
+                        <li>
+                            <img src="image07.jpg" alt="Dambulla Cave Temple" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Dambulla Cave Temple</h4>
+                            <p>Marvel at centuries-old Buddhist murals and statues inside this sacred cave complex.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Immerse in Nature</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <img src="image08.jpg" alt="Tea Plantation Tours" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Tea Plantation Tours</h4>
+                            <p>Stroll through lush tea estates, learn about tea production, and enjoy a fresh cup of Ceylon tea.</p>
+                        </li>
+                        <li>
+                            <img src="image09.jpg" alt="Adam's Peak Pilgrimage" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Adam's Peak Pilgrimage</h4>
+                            <p>Hike to the summit for sunrise and experience spiritual harmony with local pilgrims.</p>
+                        </li>
+                        <li>
+                            <img src="image10.jpg" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Safari in National Parks</h4>
+                            <p>Spot leopards, elephants, and exotic birds in their natural habitats.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Beach Bliss and Ocean Adventures</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <img src="image11.jpg" alt="Surfing in Arugam Bay" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Surfing in Arugam Bay</h4>
+                            <p>Catch some of the best waves at this world-renowned surfing destination.</p>
+                        </li>
+                        <li>
+                            <img src="image12.jpg" alt="Whale Watching in Mirissa" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Whale Watching in Mirissa</h4>
+                            <p>Witness blue whales and playful dolphins up close.</p>
+                        </li>
+                        <li>
+                            <img src="image3.jpg" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Relaxing in Unawatuna</h4>
+                            <p>Swim in turquoise waters and unwind on golden beaches surrounded by palm trees.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Culinary Journeys</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <img src="image13.jpg" alt="Sri Lankan Cooking Class" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Sri Lankan Cooking Class</h4>
+                            <p>Learn how to prepare local dishes like coconut sambal, dhal curry, and spiced rice.</p>
+                        </li>
+                        <li>
+                            <img src="image14.jpg" alt="Street Food Adventures" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Street Food Adventures</h4>
+                            <p>Savor kottu roti, hoppers, and freshly fried snacks at local markets.</p>
+                        </li>
+                        <li>
+                            <img src="image15.jpg" alt="Seafood Feasts" class="rounded-lg mb-2">
+                            <h4 class="font-semibold">Seafood Feasts</h4>
+                            <p>Indulge in freshly caught fish, crab, and prawns, especially in coastal towns.</p>
+                        </li>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Life - Discover Sri Lanka</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        #contact {
+            background-image: url('image (2).jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .contact-overlay {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800" x-data="{ mobileMenu: false }">
+    <!-- Previous navigation and content sections remain the same -->
+
+    <section id="contact" class="py-18 bg-cover bg-center relative">
+        <div class="absolute inset-0 bg-white opacity-80"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-green-700">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Contact Information</h3>
+                    <div class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                       
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <div class="space-y-2">
+                <p>📍 Address: 84/1/A, Kimbulapitiya, Andiambalama, Sri Lanka</p>
+                <p>📞 Phone Numbers:</p>
+                <ul class="space-y-1">
+                    <li>+94 77 2105131</li>
+                    <li>+94 77 3533982</li>
+                </ul>
+                <p>📧 Email:</p>
+                <ul class="space-y-1">
+                    <li>livinglife1lanka@gamil.com</li>
+                    <li>support@livinglife.com</li>
+ </div>
+                        <div>
+                            <h4 class="font-semibold">🌐 Website</h4>
+                            <p>www.livinglife.com</p>
+                        </div>
+
+             
+
+   
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Send Us a Message</h3>
+                    <form class="space-y-4 bg-white p-6 rounded-lg shadow-md">
+                        <div>
+                            <label for="name" class="block mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-3 py-2 border rounded-md" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-md" required></textarea>
+                        </div>
+                        <div>
+                            <label class="block mb-2">Preferred Contact Method</label>
+                            <div class="space-x-4">
+                                <label>
+                                    <input type="radio" name="contact-method" value="email" class="mr-2">
+                                    Email
+                                </label>
+                                <label>
+                                    <input type="radio" name="contact-method" value="phone" class="mr-2">
+                                    Phone
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
